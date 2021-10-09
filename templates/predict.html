@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+
+        .prediction{
+
+            text-align: center;
+            background-color: rgb(26, 121, 185);
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">RP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>    
+
+    <div class="prediction">
+
+        <h3><strong>Make Your Predictions</strong></h3><br><br>
+
+        <form action="{{ url_for('predict')}}"  method="POST">
+            <h3>Enter the Rainfall feature</h2><br>
+            <input type="number" name="feat1" placeholder="feat1"><br><br>
+            <h3>Enter the Sunshine feature</h3><br><br>
+            <input type="number" name="feat2" placeholder="feat2"><br><br>
+            <h3>Enter the WindGustSpeed feature</h3><br><br>
+            <input type="number" name="feat3" placeholder="feat3"><br><br>
+            <h3>Enter the WindDir3pm feature</h3><br><br>
+            <input type="number" name="feat4" placeholder="feat4"><br><br>
+            <h3>Enter the Humidity3pm feature</h3><br><br>
+            <input type="number" name="feat5" placeholder="feat5"><br><br>
+            <h3>Enter the Pressure3pm feature</h3><br><br>
+            <input type="number" name="feat6" placeholder="feat6"><br><br>
+            <h3>Enter the Cloud9am feature</h3><br><br>
+            <input type="number" name="feat7" placeholder="feat7"><br><br>
+            <h3>Enter the Cloud3pm feature</h3><br><br>
+            <input type="number" name="feat8" placeholder="feat8"><br><br>
+            <h3>Enter the RainToday feature</h3><br><br>
+            <input type="number" name="feat9" placeholder="feat9"><br><br><br>
+            <button type="button" class="btn btn-primary">Predict</button>
+        </form>
+
+
+
+    </div>
+
+    
+</body>
+</html>
