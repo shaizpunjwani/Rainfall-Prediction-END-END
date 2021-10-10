@@ -1,4 +1,4 @@
-# shaizpunjwani-Rainfall-Prediction-END-END-
+# Rainfall-Prediction-END-END-
 
 Overall look of front-end
 we have used HTML, CSS, BOOTSTRAP, FLASK
